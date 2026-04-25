@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.trademaster</groupId>
+    <artifactId>trade-master</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>trade-application-api</artifactId>
+  <packaging>jar</packaging>
+
+  <name>trade-application-api</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-shared-kernel</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-identity-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-market-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-ledger-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-risk-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-order-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-execution-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-settlement-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-reconciliation-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-reporting-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.trademaster</groupId>
+      <artifactId>trade-notification-context</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

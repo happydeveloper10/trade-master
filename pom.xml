@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.4.0</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>com.trademaster</groupId>
+  <artifactId>trade-master</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>trade-master</name>
+  <description>Trade Master modular monolith</description>
+
+  <properties>
+    <java.version>21</java.version>
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <module>trade-shared-kernel</module>
+    <module>trade-identity-context</module>
+    <module>trade-market-context</module>
+    <module>trade-ledger-context</module>
+    <module>trade-risk-context</module>
+    <module>trade-order-context</module>
+    <module>trade-execution-context</module>
+    <module>trade-settlement-context</module>
+    <module>trade-reconciliation-context</module>
+    <module>trade-reporting-context</module>
+    <module>trade-notification-context</module>
+    <module>trade-application-api</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-shared-kernel</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-identity-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-market-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-ledger-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-risk-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-order-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-execution-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-settlement-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-reconciliation-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-reporting-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-notification-context</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.trademaster</groupId>
+        <artifactId>trade-application-api</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.modulith</groupId>
+        <artifactId>spring-modulith-bom</artifactId>
+        <version>1.3.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
+
